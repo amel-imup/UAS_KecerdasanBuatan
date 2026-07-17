@@ -114,7 +114,8 @@ Kelas **Wrinkles** memiliki jumlah gambar terbanyak (141 gambar), sedangkan kela
 
 ### 4.2 Contoh Gambar per Kelas
 
-![Contoh Gambar per Class](images/2_sample_images.png)
+
+![Contoh Gambar per Class](../image/2_sample_images.png)
 
 Visualisasi satu sampel gambar dari masing-masing kelas menunjukkan bahwa antar-kelas memiliki kemiripan visual yang cukup tinggi, terutama antara **Normal Skin**, **Oily Skin**, dan **Dry Skin**, yang secara kasat mata sulit dibedakan bahkan oleh manusia awam tanpa pencahayaan dan sudut pengambilan gambar yang konsisten. Kemiripan visual ini menjadi tantangan tersendiri bagi model klasifikasi.
 
