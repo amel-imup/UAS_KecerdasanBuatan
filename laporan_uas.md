@@ -107,13 +107,13 @@ Dari hasil eksplorasi jumlah gambar per kelas, terlihat bahwa dataset **tidak se
 Sebelum masuk ke tahap pemodelan, dilakukan eksplorasi data untuk memahami distribusi jumlah gambar per kelas serta karakteristik visual dataset.
 
 ### 4.1 Distribusi Jumlah Gambar per Kelas
-![Jumlah Gambar per Kelas](image/class_distribution.png)
+![Jumlah Gambar per Kelas](image/class%20distribution.png)
 
 Kelas **Wrinkles** memiliki jumlah gambar terbanyak (141 gambar), sedangkan kelas **Dry Skin** memiliki jumlah gambar paling sedikit (71 gambar). Ketimpangan ini berpotensi membuat model lebih condong (*bias*) dalam mengenali kelas dengan jumlah data lebih besar, dan menjadi salah satu kandidat penyebab performa yang lebih rendah pada kelas dengan data minim (lihat Bagian 7).
 
 ### 4.2 Contoh Gambar per Kelas
 
-![Contoh Gambar per Kelas](image/sample_images.png)
+![Contoh Gambar per Kelas](image/sample%20images.png)
 
 Visualisasi satu sampel gambar dari masing-masing kelas menunjukkan bahwa antar-kelas memiliki kemiripan visual yang cukup tinggi, terutama antara **Normal Skin**, **Oily Skin**, dan **Dry Skin**, yang secara kasat mata sulit dibedakan bahkan oleh manusia awam tanpa pencahayaan dan sudut pengambilan gambar yang konsisten. Kemiripan visual ini menjadi tantangan tersendiri bagi model klasifikasi.
 
@@ -203,9 +203,9 @@ Model akhir disimpan dalam format `.h5` (`skin_disease_model.h5`) menggunakan `m
 ![Kurva Loss](image/loss.png)
 
 **Tahap 2 (Fine-Tuning):**
-![Kurva Akurasi Fine-Tuning](image/fine_tuning_accuracy.png)
+![Kurva Akurasi Fine-Tuning](image/fine%20tuning%20accuracy.png)
 
-![Kurva Loss Fine-Tuning](image/fine_tuning_loss.png)
+![Kurva Loss Fine-Tuning](image/fine%20tuning%20loss.png)
 
 Kurva menunjukkan akurasi *training* terus meningkat pada kedua tahap, namun akurasi *validation* cenderung stagnan/mendatar di kisaran 50–55% setelah beberapa *epoch*, sementara *loss training* terus menurun. Pola ini mengindikasikan gejala **overfitting ringan**, di mana model semakin menghafal data latih namun tidak diikuti peningkatan performa yang sepadan pada data validasi.
 
@@ -233,7 +233,7 @@ Kurva menunjukkan akurasi *training* terus meningkat pada kedua tahap, namun aku
 
 ### 7.4 Confusion Matrix
 
-![Confusion Matrix](image/confusion_matrix.png)
+![Confusion Matrix](image/confussion%20matrix.png)
 
 ### 7.5 Analisis Kesalahan Klasifikasi
 
@@ -246,7 +246,7 @@ Kurva menunjukkan akurasi *training* terus meningkat pada kedua tahap, namun aku
 
 Dilakukan uji coba *end-to-end* dengan mengunggah satu gambar kulit baru (kulit berminyak):
 
-![Hasil Prediksi](image/prediction_result.png)
+![Hasil Prediksi](image/prediction%20result.png)
 
 ```
 Top 3 Prediksi:
