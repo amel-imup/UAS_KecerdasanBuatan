@@ -354,13 +354,3 @@ Klasifikasi_Kulit_Berbasis_Computer_Vision.ipynb
 laporan_uas.md
 README.md
 ```
-
-## 10.7 Grafik Tambahan
-
-### Ringkasan Model
-
-![Model Summary](image/model%20summary.png)
-
-### Contoh Prediksi
-
-![Prediction Result](image/prediction%20result.png)
