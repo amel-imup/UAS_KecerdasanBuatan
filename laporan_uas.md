@@ -109,7 +109,7 @@ Sebelum masuk ke tahap pemodelan, dilakukan eksplorasi data untuk memahami distr
 ### 4.1 Distribusi Jumlah Gambar per Kelas
 
 ![Jumlah Gambar per Class](image/1_class_distribution.png)
-
+![class_distribution](image/class_distribution.png)
 Kelas **Wrinkles** memiliki jumlah gambar terbanyak (141 gambar), sedangkan kelas **Dry Skin** memiliki jumlah gambar paling sedikit (71 gambar). Ketimpangan ini berpotensi membuat model lebih condong (*bias*) dalam mengenali kelas dengan jumlah data lebih besar, dan menjadi salah satu kandidat penyebab performa yang lebih rendah pada kelas dengan data minim (lihat Bagian 7).
 
 ### 4.2 Contoh Gambar per Kelas
