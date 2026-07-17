@@ -108,13 +108,13 @@ Sebelum masuk ke tahap pemodelan, dilakukan eksplorasi data untuk memahami distr
 
 ### 4.1 Distribusi Jumlah Gambar per Kelas
 
-![Jumlah Gambar per Class](image/1_class distribution.png)
+![Jumlah Gambar per Class](image/1_class_distribution.png)
 
 Kelas **Wrinkles** memiliki jumlah gambar terbanyak (141 gambar), sedangkan kelas **Dry Skin** memiliki jumlah gambar paling sedikit (71 gambar). Ketimpangan ini berpotensi membuat model lebih condong (*bias*) dalam mengenali kelas dengan jumlah data lebih besar, dan menjadi salah satu kandidat penyebab performa yang lebih rendah pada kelas dengan data minim (lihat Bagian 7).
 
 ### 4.2 Contoh Gambar per Kelas
 
-![Contoh Gambar per Class](images/2_sample images.png)
+![Contoh Gambar per Class](images/2_sample_images.png)
 
 Visualisasi satu sampel gambar dari masing-masing kelas menunjukkan bahwa antar-kelas memiliki kemiripan visual yang cukup tinggi, terutama antara **Normal Skin**, **Oily Skin**, dan **Dry Skin**, yang secara kasat mata sulit dibedakan bahkan oleh manusia awam tanpa pencahayaan dan sudut pengambilan gambar yang konsisten. Kemiripan visual ini menjadi tantangan tersendiri bagi model klasifikasi.
 
@@ -203,8 +203,8 @@ Model akhir disimpan dalam format `.h5` (`skin_disease_model.h5`) menggunakan `m
 
 **Tahap 2 (Fine-Tuning):**
 
-![Akurasi Fine-Tuning](image/5_fine tuning accuracy.png)
-![Loss Fine-Tuning](image/6_fine tuning loss.png)
+![Akurasi Fine-Tuning](image/5_fine_tuning_accuracy.png)
+![Loss Fine-Tuning](image/6_fine_tuning_loss.png)
 
 Kurva menunjukkan akurasi *training* terus meningkat pada kedua tahap, namun akurasi *validation* cenderung stagnan/mendatar di kisaran 50–55% setelah beberapa *epoch*, sementara *loss training* terus menurun. Pola ini mengindikasikan gejala **overfitting ringan**, di mana model semakin menghafal data latih namun tidak diikuti peningkatan performa yang sepadan pada data validasi.
 
@@ -245,7 +245,7 @@ Kurva menunjukkan akurasi *training* terus meningkat pada kedua tahap, namun aku
 
 Dilakukan uji coba *end-to-end* dengan mengunggah satu gambar kulit baru (kulit berminyak):
 
-![Uji Prediksi Satu Gambar](images/8_prediction result.png)
+![Uji Prediksi Satu Gambar](images/8_prediction_result.png)
 
 ```
 Top 3 Prediksi:
