@@ -292,5 +292,75 @@ Pada kasus uji ini, model berhasil memprediksi kelas dengan benar (Oily Skin) da
 4. Watef, L., & Mahanto, F. (2024). Deteksi dan visualisasi berbasis computer vision untuk analisis gambar dermatologis dalam penilaian keparahan jerawat, 6(1), 45–53.
 5. Yolov, B., & Resnet, D. A. N. (2024). *JUTEKOM: Jurnal Teknologi dan Ilmu Komputer*, 1(3), 2–9.
 
-## Lampiran 
-dataset_path = "dataset"
+---
+
+# 10. Lampiran
+
+## 10.1 Dataset
+
+Dataset yang digunakan pada penelitian ini berasal dari Kaggle:
+
+- Skin Classification Dataset
+- Link: https://www.kaggle.com/datasets/rajeshpandhare/skin-classification-normal-acne-oily-dry-wrinkle
+
+Struktur dataset:
+
+```text
+skin_dataset/
+├── train/
+│   ├── Acne/
+│   ├── Blackheads/
+│   ├── Dark Spots/
+│   ├── Dry Skin/
+│   ├── Normal Skin/
+│   ├── Oily Skin/
+│   └── Wrinkles/
+```
+
+## 10.2 Ringkasan Model
+
+![Model Summary](image/model%20summary.png)
+
+Gambar di atas menunjukkan arsitektur MobileNetV2 yang digunakan sebagai model klasifikasi.
+
+## 10.3 Hasil Prediksi
+
+![Prediction Result](image/prediction%20result.png)
+
+Contoh hasil prediksi pada satu gambar uji menunjukkan model memprediksi kelas **Oily Skin** dengan confidence sebesar **80,23%**.
+
+## 10.4 Notebook Google Colab
+
+Notebook yang digunakan selama proses pengembangan:
+
+- `Klasifikasi_Kulit_Berbasis_Computer_Vision.ipynb`
+
+Notebook tersebut berisi:
+- preprocessing data
+- augmentasi data
+- training MobileNetV2
+- fine-tuning
+- evaluasi model
+- prediksi gambar
+
+## 10.5 File Proyek
+
+Repository terdiri dari:
+
+```text
+data/
+image/
+Klasifikasi_Kulit_Berbasis_Computer_Vision.ipynb
+laporan_uas.md
+README.md
+```
+
+## 10.7 Grafik Tambahan
+
+### Ringkasan Model
+
+![Model Summary](image/model%20summary.png)
+
+### Contoh Prediksi
+
+![Prediction Result](image/prediction%20result.png)
