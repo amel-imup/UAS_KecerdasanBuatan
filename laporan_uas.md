@@ -6,15 +6,16 @@
 
 **Anggota Kelompok:**
 
-1. _(isi nama & NIM di sini)_
+1. _(Ina Amelia Cantika 2406122)_
+2. _(Aprilia Fauziah 2406090)_
 
-**LINK/SUMBER Dataset:** Dataset gambar kulit internal (ZIP `archive (4).zip`), terbagi ke dalam folder `train` dan `val`, 7 kelas kondisi kulit
+**LINK/SUMBER Dataset:** (https://www.kaggle.com/datasets/rajeshpandhare/skin-classification-normal-acne-oily-dry-wrinkle)
 
 ---
 
 ## 1. Judul Proyek
 
-**"Pengembangan Aplikasi Diagnosis Awal Kondisi Kulit Menggunakan Artificial Intelligence dan Computer Vision dengan Transfer Learning MobileNetV2 (SkinVision AI)"**
+**"Klasifikasi Kondisi Kulit Berbasis Computer Vision"**
 
 ---
 
@@ -107,13 +108,13 @@ Sebelum masuk ke tahap pemodelan, dilakukan eksplorasi data untuk memahami distr
 
 ### 4.1 Distribusi Jumlah Gambar per Kelas
 
-![Jumlah Gambar per Class](images/1_bar_jumlah_gambar_per_class.png)
+![Jumlah Gambar per Class](image/1_class distribution.png)
 
 Kelas **Wrinkles** memiliki jumlah gambar terbanyak (141 gambar), sedangkan kelas **Dry Skin** memiliki jumlah gambar paling sedikit (71 gambar). Ketimpangan ini berpotensi membuat model lebih condong (*bias*) dalam mengenali kelas dengan jumlah data lebih besar, dan menjadi salah satu kandidat penyebab performa yang lebih rendah pada kelas dengan data minim (lihat Bagian 7).
 
 ### 4.2 Contoh Gambar per Kelas
 
-![Contoh Gambar per Class](images/2_sample_gambar_per_class.png)
+![Contoh Gambar per Class](images/2_sample images.png)
 
 Visualisasi satu sampel gambar dari masing-masing kelas menunjukkan bahwa antar-kelas memiliki kemiripan visual yang cukup tinggi, terutama antara **Normal Skin**, **Oily Skin**, dan **Dry Skin**, yang secara kasat mata sulit dibedakan bahkan oleh manusia awam tanpa pencahayaan dan sudut pengambilan gambar yang konsisten. Kemiripan visual ini menjadi tantangan tersendiri bagi model klasifikasi.
 
@@ -197,13 +198,13 @@ Model akhir disimpan dalam format `.h5` (`skin_disease_model.h5`) menggunakan `m
 
 **Tahap 1 (Training Head Layer):**
 
-![Akurasi Tahap 1](images/3a_akurasi_tahap1.png)
-![Loss Tahap 1](images/3b_loss_tahap1.png)
+![Akurasi Tahap 1](image/3_accuracy.png)
+![Loss Tahap 1](image/4_loss.png)
 
 **Tahap 2 (Fine-Tuning):**
 
-![Akurasi Fine-Tuning](images/4a_akurasi_finetune.png)
-![Loss Fine-Tuning](images/4b_loss_finetune.png)
+![Akurasi Fine-Tuning](image/5_fine tuning accuracy.png)
+![Loss Fine-Tuning](image/6_fine tuning loss.png)
 
 Kurva menunjukkan akurasi *training* terus meningkat pada kedua tahap, namun akurasi *validation* cenderung stagnan/mendatar di kisaran 50–55% setelah beberapa *epoch*, sementara *loss training* terus menurun. Pola ini mengindikasikan gejala **overfitting ringan**, di mana model semakin menghafal data latih namun tidak diikuti peningkatan performa yang sepadan pada data validasi.
 
@@ -231,7 +232,7 @@ Kurva menunjukkan akurasi *training* terus meningkat pada kedua tahap, namun aku
 
 ### 7.4 Confusion Matrix
 
-![Confusion Matrix](images/5_confusion_matrix.png)
+![Confusion Matrix](image/7_confussion matrix.png)
 
 ### 7.5 Analisis Kesalahan Klasifikasi
 
@@ -244,7 +245,7 @@ Kurva menunjukkan akurasi *training* terus meningkat pada kedua tahap, namun aku
 
 Dilakukan uji coba *end-to-end* dengan mengunggah satu gambar kulit baru (kulit berminyak):
 
-![Uji Prediksi Satu Gambar](images/6_uji_prediksi_satu_gambar.png)
+![Uji Prediksi Satu Gambar](images/8_prediction result.png)
 
 ```
 Top 3 Prediksi:
@@ -284,10 +285,11 @@ Pada kasus uji ini, model berhasil memprediksi kelas dengan benar (Oily Skin) da
 
 ## 9. Referensi (APA Style)
 
-1. Sandler, M., Howard, A., Zhu, M., Zhmoginov, A., & Chen, L. C. (2018). MobileNetV2: Inverted residuals and linear bottlenecks. In *Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)*, 4510-4520.
-2. Abadi, M., et al. (2016). TensorFlow: A system for large-scale machine learning. In *12th USENIX Symposium on Operating Systems Design and Implementation (OSDI 16)*, 265-283.
-3. Chollet, F., et al. (2015). *Keras*. https://keras.io
-4. Pedregosa, F., Varoquaux, G., Gramfort, A., Michel, V., Thirion, B., Grisel, O., ... & Duchesnay, E. (2011). Scikit-learn: Machine learning in Python. *Journal of Machine Learning Research*, 12, 2825-2830.
-5. Deng, J., Dong, W., Socher, R., Li, L. J., Li, K., & Fei-Fei, L. (2009). ImageNet: A large-scale hierarchical image database. In *2009 IEEE Conference on Computer Vision and Pattern Recognition*, 248-255.
-6. Waskom, M. L. (2021). Seaborn: Statistical data visualization. *Journal of Open Source Software*, 6(60), 3021.
-7. Hunter, J. D. (2007). Matplotlib: A 2D graphics environment. *Computing in Science & Engineering*, 9(3), 90-95.
+1. agarwal, R., & Godavarthi, D. (2023). *EAI Endorsed Transactions on Pervasive Health and Technology, 9*, 1–8. https://doi.org/10.4108/eetpht.9.4039
+2. Studi, P., Terapan, S., Rekayasa, T., Lunak, P., Informasi, J. T., & Bali, P. N. (2025). Aplikasi berbasis web untuk deteksi menggunakan convolutional neural network.
+3. Velasco, J., Pascion, C., Alberio, J. W., Apuang, J., Cruz, J. S., Gomez, A., Molina, B. J., Tuala, L., Thio-ac, A., & Jorda, R. J. (2019). A smartphone-based skin disease classification using MobileNet CNN. *International Journal of Advanced Trends in Computer Science and Engineering*, 8(5), 3–8.
+4. Watef, L., & Mahanto, F. (2024). Deteksi dan visualisasi berbasis computer vision untuk analisis gambar dermatologis dalam penilaian keparahan jerawat, 6(1), 45–53.
+5. Yolov, B., & Resnet, D. A. N. (2024). *JUTEKOM: Jurnal Teknologi dan Ilmu Komputer*, 1(3), 2–9.
+
+## Lampiran 
+dataset_path = "dataset"
