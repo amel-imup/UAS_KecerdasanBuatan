@@ -131,12 +131,12 @@ pip install tensorflow pandas numpy matplotlib seaborn scikit-learn
 
 ## Referensi
 
-1. Sandler, M., Howard, A., Zhu, M., Zhmoginov, A., & Chen, L. C. (2018). MobileNetV2: Inverted residuals and linear bottlenecks. *CVPR*.
-2. Abadi, M., et al. (2016). TensorFlow: A system for large-scale machine learning. *OSDI 16*.
-3. Chollet, F., et al. (2015). *Keras*. https://keras.io
-4. Pedregosa, F., et al. (2011). Scikit-learn: Machine learning in Python. *JMLR*, 12, 2825-2830.
-5. Deng, J., et al. (2009). ImageNet: A large-scale hierarchical image database. *CVPR*.
+1. agarwal, R., & Godavarthi, D. (2023). *EAI Endorsed Transactions on Pervasive Health and Technology, 9*, 1–8. https://doi.org/10.4108/eetpht.9.4039
+2. Studi, P., Terapan, S., Rekayasa, T., Lunak, P., Informasi, J. T., & Bali, P. N. (2025). Aplikasi berbasis web untuk deteksi menggunakan convolutional neural network.
+3. Velasco, J., Pascion, C., Alberio, J. W., Apuang, J., Cruz, J. S., Gomez, A., Molina, B. J., Tuala, L., Thio-ac, A., & Jorda, R. J. (2019). A smartphone-based skin disease classification using MobileNet CNN. *International Journal of Advanced Trends in Computer Science and Engineering*, 8(5), 3–8.
+4. Watef, L., & Mahanto, F. (2024). Deteksi dan visualisasi berbasis computer vision untuk analisis gambar dermatologis dalam penilaian keparahan jerawat, 6(1), 45–53.
+5. Yolov, B., & Resnet, D. A. N. (2024). *JUTEKOM: Jurnal Teknologi dan Ilmu Komputer*, 1(3), 2–9.
 
 ---
 
-Laporan lengkap tersedia di [`Laporan_UAS_SkinVisionAI.md`](Laporan_UAS_SkinVisionAI.md).
+Laporan lengkap tersedia di [`laporan_uas.md`](laporan_uas.md).
